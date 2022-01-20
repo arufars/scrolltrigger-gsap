@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 63%;
+}
+body {
+    overflow-x: hidden;
+    background: #ececec;
+    height: 2000px;
+    font-family: 'Montserrat', sans-serif;
+}
+h1 {
+    font-weight: 600;
+    font-size: 48px;
+    color: #333;
+    margin: 0;
+    text-transform: uppercase;
+    line-height: 1.3;
+    letter-spacing: .0001em;
+}
+h4 {
+    font-weight: 600;
+    font-size: 28px;
+    color: #666;
+    line-height: 1.3;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: .0001em;
+}
+a {
+    font-weight: 600;
+    color: #3f3f3f;
+    letter-spacing: 0.001em;
+}
+p.top-titles {
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+}
+.small-title {
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+}
+.project-link {
+    text-decoration: none;
+    border-bottom: 2px solid #b00f24;
+    padding: 5px 0;
+    font-size: 1.5rem;
+}
+
+section {
+    height: 70vh;
+    width: 100vw;
+}
+.d-grid {
+    display: grid;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.grid-12 {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-column: 1 / span 12;
+}
+.project-info {
+    background: #fff;
+    opacity: 0;
+    transform: translateX(-200px);
+    padding: 20px 20px 30px;
+}
+
+.project-left .box {
+    grid-column: 3/ span 5;
+    grid-row: 1 / span 3;
+    width: 100%;
+}
+.project-left .project-info {
+    grid-column: 2 / span 3;
+    grid-row: 2 / span 1;
+}
+
+.box {
+    position: relative;
+    overflow: hidden;
+}
+
+img {
+    width: 100%;
+    transform: scale(2);
+}
+.overlay {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #ececec;
+    width: 100%;
+    height: 100%;
+}
+/* .hidden {
+    position: relative;
+    background: #fff;
+    overflow: hidden;
+} */

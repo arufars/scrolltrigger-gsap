@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <title>Gsap | Animation</title>
+        <meta name="description" content="" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="css/normalize.min.css" />
+        <link rel="stylesheet" href="css/main.css" />
+
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    </head>
+    <style>
+        .hide {
+            position: relative;
+            overflow: hidden;
+            background: #ececec;
+        }
+    </style>
+    <body>
+        <section>
+            <div class="d-grid">
+                <div class="hide">
+                    <h1 class="up">there are Kroni here!!!</h1>
+                    <p class="top-titles up">Scroll down</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="grid-12 project project-left">
+                <div class="box">
+                    <img src="img/image1.jpg" alt="" />
+                    <div class="overlay"></div>
+                </div>
+
+                <div class="project-info">
+                    <p class="small-title">Identity // Elegan // Woman</p>
+                    <div class="hidden">
+                        <h4 class="sub-title">this woman is very beautiful</h4>
+                    </div>
+                    <a href="#" class="project-link">See learn </a>
+                </div>
+            </div>
+        </section>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script>
+            window.jQuery ||
+                document.write(
+                    '<script src="js/vendor/jquery-1.11.2.min.js"><\/script>'
+                );
+        </script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"
+            integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+
+        <script src="js/main.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function (b, o, i, l, e, r) {
+                b.GoogleAnalyticsObject = l;
+                b[l] ||
+                    (b[l] = function () {
+                        (b[l].q = b[l].q || []).push(arguments);
+                    });
+                b[l].l = +new Date();
+                e = o.createElement(i);
+                r = o.getElementsByTagName(i)[0];
+                e.src = "//www.google-analytics.com/analytics.js";
+                r.parentNode.insertBefore(e, r);
+            })(window, document, "script", "ga");
+            ga("create", "UA-XXXXX-X", "auto");
+            ga("send", "pageview");
+        </script>
+    </body>
+</html>
