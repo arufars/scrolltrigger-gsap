@@ -106,11 +106,3 @@ img {
     width: 100%;
     height: 100%;
 }
-/* .hidden {
-    position: relative;
-    background: #fff;
-    overflow: hidden;
-} */
-.hide {
-    visibility: block;
-}
