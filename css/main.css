@@ -111,3 +111,6 @@ img {
     background: #fff;
     overflow: hidden;
 } */
+.hide {
+    visibility: block;
+}
