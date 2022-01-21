@@ -107,5 +107,7 @@ img {
     height: 100%;
 }
 .up {
-    /* visibility: hidden; */
+    transform: translateY(100px);
+    opacity: 0;
+    visibility: hidden;
 }
