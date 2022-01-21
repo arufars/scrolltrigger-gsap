@@ -57,14 +57,14 @@ gsap.to(
     "+=1"
 );
 
-gsap.to(".up", {
-    opacity: 1,
-    autoAlpha: 1,
-    y: 1,
+gsap.fromTo(".up",{opacity: 0, y: 100}, {
+    autoAlpa: 1,
+    opacity:1,
     duration: 1,
     delay: 0.5,
     stagger: 0.2,
-});
+    y: 1
+})
 
 gsap.from(
     ".small-title",
