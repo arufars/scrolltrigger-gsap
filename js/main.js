@@ -1,14 +1,27 @@
 gsap.registerPlugin(ScrollTrigger);
 
+
 gsap.to(
-    ".overlay",
+    ".lay1",
     {
         scrollTrigger: {
-            trigger: ".overlay",
-            // markers: true,
+            trigger: ".lay1",
             start: "center 700",
-            // end: "200 center",
-            // scrub: true
+        },
+        duration: 2,
+        x: 30,
+        skewX: 0,
+        xPercent: 100,
+        ease: "power2.inOut",
+    },
+    "+=1"
+);
+gsap.to(
+    ".lay2",
+    {
+        scrollTrigger: {
+            trigger: ".lay2",
+            start: "center 700",
         },
         duration: 2,
         x: 30,
@@ -20,17 +33,26 @@ gsap.to(
     "+=1"
 );
 gsap.to(
-    "img",
+    ".img1",
     {
         scrollTrigger: {
-            trigger: "img",
-            // end: "200 center",
-            // markers: true,
+            trigger: ".img1",
             start: "center 700",
-            // scrub: true
         },
         duration: 2,
-        // delay: 2,
+        scale: 1,
+        ease: "power2.inOut",
+    },
+    "+=300px"
+);
+gsap.to(
+    ".img2",
+    {
+        scrollTrigger: {
+            trigger: ".img2",
+            start: "center 700",
+        },
+        duration: 2,
         delay: 0.5,
         scale: 1,
         ease: "power2.inOut",
@@ -38,19 +60,32 @@ gsap.to(
     "+=300px"
 );
 
+
 gsap.to(
-    ".project-info",
+    ".first",
     {
         scrollTrigger: {
             trigger: "img",
-            // end: "200 center",
-            // markers: true,
             start: "center 700",
-            // scrub: true
         },
         duration: 1.5,
         x: 1,
-        opacity: 1,
+        opacity: .8,
+        delay: 1,
+        ease: "power2.Out",
+    },
+    "+=1"
+);
+gsap.to(
+    ".second",
+    {
+        scrollTrigger: {
+            trigger: ".second",
+            start: "center 700",
+        },
+        duration: 1.5,
+        x: 1,
+        opacity: .8,
         delay: 2,
         ease: "power2.Out",
     },
@@ -99,5 +134,6 @@ gsap.from(
     "-=.1"
 );
 
-// scroll magic
-window.history.scrollRestoration = "manual"
+// visibility
+gsap.to("section", 0, {css:{visibility: "visible"}})
+
